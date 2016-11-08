@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Triva Game</title>
+	<!-- CSS Files -->
+	<link rel="stylesheet" type="text/css" href="Assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="Assets/css/style.css">
+</head>
+<body>
+	<header id="masthead">
+		<div class="container">
+			<h1>Cubs Trivia Game</h1>
+		</div>
+	</header>
+	<div id="main-container" class="container">
+		<section class="main-section">
+			<h1 class="rules">The Rules</h1>
+			<p class="rules">Answer as many questions as possible in the time allotted </p>
+			<h2>
+				<button type="button" id="start-button">Start</button>
+			</h2>
+			<!-- timer will be displayed in div#show-number-->
+			<div id="show-number"></div>
+			<!-- question 1 -->
+			<p class="question">1. Which 2 Cub Hall of Famers share the #33 retired by the Team?</p>
+			<ul class="answers">
+			<input type="radio" name="q1" value="a" id="q1a"><label for="q1a">Greg Maddux and Fergie Jenkins</label><br/>
+			<input type="radio" name="q1" value="b" id="q1b"><label for="q1b">Ron Santo and Billy Williams</label><br/>
+			<input type="radio" name="q1" value="c" id="q1c"><label for="q1c">Ernie Banks and Andre Dawson</label><br/>
+			<input type="radio" name="q1" value="d" id="q1d"><label for="q1d">Ernie Banks and Greg Maddux</label><br/>
+			</ul>
+			<!-- question 2 -->
+			<p class="question">2. Which former Cub won the 2005 National League Batting Title?</p>
+			<ul class="answers">
+			<input type="radio" name="q2" value="a" id="q2a"><label for="q2a">Sammy Sosa</label><br/>
+			<input type="radio" name="q2" value="b" id="q2b"><label for="q2b">Aramis Ramirez</label><br/>
+			<input type="radio" name="q2" value="c" id="q2c"><label for="q2c">Derek Lee</label><br/>
+			<input type="radio" name="q2" value="d" id="q2d"><label for="q2d">Moises Alou</label><br/>
+			</ul>
+			<!-- question 3 -->
+			<p class="question">3. In his rookie season, Kerry Wood tied the Major League Record for strikeouts in a game; How many batters did he strikeout?</p>
+			<ul class="answers">
+			<input type="radio" name="q3" value="a" id="q3a"><label for="q3a">18</label><br/>
+			<input type="radio" name="q3" value="b" id="q3b"><label for="q3b">22</label><br/>
+			<input type="radio" name="q3" value="c" id="q3c"><label for="q3c">20</label><br/>
+			<input type="radio" name="q3" value="d" id="q3d"><label for="q3d">15</label><br/>
+			</ul>
+			<!-- question 4 -->
+			<p class="question">4. Which player won the 2008 National League Rookie of the Year as a member of the Chicago Cubs?</p>
+			<ul class="answers">
+			<input type="radio" name="q4" value="a" id="q4a"><label for="q4a">Kosuke Fukudome</label><br/>
+			<input type="radio" name="q4" value="b" id="q4b"><label for="q4b">Geovany Soto</label><br/>
+			<input type="radio" name="q4" value="c" id="q4c"><label for="q4c">Carlos Marmol</label><br/>
+			<input type="radio" name="q4" value="d" id="q4d"><label for="q4d">Ronny Cedeno</label><br/>
+			</ul>
+			<!-- question 5 -->
+			<p class="question">4. How many years has it been since the Cubs last won a World Series?</p>
+			<ul class="answers">
+			<input type="radio" name="q5" value="a" id="q5a"><label for="q5a">0</label><br/>
+			<input type="radio" name="q5" value="b" id="q5b"><label for="q5b">108</label><br/>
+			<input type="radio" name="q5" value="c" id="q5c"><label for="q5c">We are</label><br/>
+			<input type="radio" name="q5" value="d" id="q5d"><label for="q5d">The Champions!</label><br/>
+			</ul>
+			<!-- Hidden Buttons and Elements -->
+			<!-- Submit Button -->
+			<button type="button" id="submit">Submit</button>
+			<!-- Results -->
+			<div id="results">
+			How'd I do?
+				<!-- <div id="category1">
+				<p><strong>Question 1:</strong> The correct answer is the <strong>Answer 1</strong>.</p>
+				</div> -->
+			</div>
+			<button type="button" id="restart">Play Again</button>
+		</section>
+	</div>
+
+	<!-- JavaScript File & jQuery Lib -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
+	<script type="text/javascript" src="/js/questions.js"></script>
+</body>
+</html>
